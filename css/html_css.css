@@ -110,6 +110,7 @@
   margin: auto;
   height: 50%;
   width: 50%;
+  overflow: hidden;
 }
 
 .db-items span{
@@ -117,7 +118,7 @@
   display: block;
   border: 3px solid darkgray;
   border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
-  width: 50%;
+  width: 30%;
   height: 50%;
   bottom: 3%;
   transition: 0.5s;
