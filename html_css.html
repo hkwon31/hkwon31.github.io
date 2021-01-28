@@ -16,7 +16,13 @@
           <span></span>
         </div>
       </a>
-      <a href="#none">test</a>
+      <a href="#none" class="square-loading">
+       <h3>Square Loading</h3>
+       <div class="square-items">
+         <span></span>
+         <span></span>
+       </div>
+      </a>
       <a href="#none">test</a>
       <a href="#none">test</a>
       <a href="#none">test</a>
@@ -30,6 +36,12 @@
       $(this).children().css('animation-play-state', 'running');
     })
     $('.items').mouseleave(function(){
+      $(this).children().css('animation-play-state', 'paused');
+    });
+    $('.square-items').mouseenter(function() {
+      $(this).children().css('animation-play-state', 'running');
+    });
+    $('.square-items').mouseleave(function() {
       $(this).children().css('animation-play-state', 'paused');
     });
   </script>

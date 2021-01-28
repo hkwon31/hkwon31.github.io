@@ -5,17 +5,21 @@
 .items {
   margin: 50px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-auto-flow: column;
+  grid-auto-rows: minmax(100px, auto);
+  grid-auto-columns: minmax(100px, auto;)
 }
 
 .items a {
-  line-height: 250px;
-  font-size: 20px;
-  height: 300px;
-  margin: 10px;
+  box-sizing: border-box;
+  line-height: 200px;
+  font-size: 16px;
+  height: 200px;
+  margin: 5px;
   border: 2px solid black;
   border-radius: 50%;
   text-decoration: none;
+  overflow: hidden;
   color: black;
   background-repeat: no-repeat;
   background-size: cover;
