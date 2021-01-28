@@ -6,8 +6,6 @@
   margin: 50px;
   display: grid;
   grid-auto-flow: column;
-  grid-auto-rows: minmax(100px, auto);
-  grid-auto-columns: minmax(100px, auto;)
 }
 
 .items a {
