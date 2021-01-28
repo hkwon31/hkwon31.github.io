@@ -23,7 +23,14 @@
          <span></span>
        </div>
       </a>
-      <a href="#none">test</a>
+      <a href="#none" class="double-border-radius">
+        <h3>Double Border Radius</h3>
+        <div class="db-items">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </a>
       <a href="#none">test</a>
       <a href="#none">test</a>
       <a href="#none">test</a>
@@ -43,6 +50,12 @@
     });
     $('.square-items').mouseleave(function() {
       $(this).children().css('animation-play-state', 'paused');
+    });
+    $('.db-items').mouseenter(function() {
+      $(this).children('span').css('animation-play-state', 'running');
+    });
+    $('.db-items').mouseleave(function() {
+      $(this).children('span').css('animation-play-state', 'paused');
     });
   </script>
 </body>
