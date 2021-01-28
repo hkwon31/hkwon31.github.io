@@ -1,0 +1,36 @@
+.container {
+  text-align: center;
+}
+
+.items {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.items a {
+  line-height: 250px;
+  font-size: 20px;
+  height: 300px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  text-decoration: none;
+  color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.items a:hover{
+  background-image: url('/images/not_finished.jpg')
+}
+
+.items a:first-child:hover{
+  background-image: url('/images/html_css.jpg');
+}
+
+
+
+
+

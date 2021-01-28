@@ -116,20 +116,20 @@ analytics:
 # 사이트 소유자에 대한 정보를 작성합니다.
 # Site Author
 author:
-  name             : "Imreplay"
+  name             : "Hyeonghwan kwon"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "천천히 굴러가는 개인 공부 블로그"
+  bio              : "My personal blog"
   location         : "Republic of Korea"
-  email            : "imreplay@imreplay.xyz"
-  uri              : "https://blog.imreplay.xyz"
+  email            : "hkwon31@uic.edu"
+  uri              : "https://hkwon31.github.io"
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : "imreplay08"
+  facebook         : 
   foursquare       :
-  github           : "imreplay"
+  github           : "hkwon31"
   gitlab           :
   google_plus      :
   keybase          :
@@ -145,7 +145,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          : 
 
 
 # Reading Files
@@ -311,12 +311,12 @@ defaults:
 # repo defaults to USERNAME.github.io
 # Branch defaults to "source" for USERNAME.github.io
 # or "master" otherwise
-safe: False
-lsi: False
-username: imreplay # Github Username
-repo: blog # Github repo name
-branch: master # 작업 브랜치를 설정
-relative_source: ../blog/ # 저는 repo 이름으로 설정했습니다.
-destination: ../posts # 빌드시 작업파일이 저장될 경로
-production_url:  https://blog.imreplay.xyz # 사이트 URL
-source_url:  https://github.com/imreplay/blog/ # Github 저장소 URL
+# safe: False
+# lsi: False
+# username: hkwon31 # Github Username
+# repo: blog # Github repo name
+# branch: master # 작업 브랜치를 설정
+# relative_source: ../blog/ # 저는 repo 이름으로 설정했습니다.
+# destination: ../posts # 빌드시 작업파일이 저장될 경로
+# production_url:  https://blog.imreplay.xyz # 사이트 URL
+# source_url:  https://github.com/imreplay/blog/ # Github 저장소 URL
