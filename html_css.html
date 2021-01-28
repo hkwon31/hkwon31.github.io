@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/html_css.css">
+</head>
+<body>
+  <div class="container">
+    <div class="grid-items">
+      <a href="#none" class="base-loading">
+        <h3>Base Loading</h3>
+        <div class="items">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </a>
+      <a href="#none">test</a>
+      <a href="#none">test</a>
+      <a href="#none">test</a>
+      <a href="#none">test</a>
+      <a href="#none">test</a>
+      <a href="#none">test</a>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script>
+    $('.items').mouseenter(function(){
+      $(this).children().css('animation-play-state', 'running');
+    })
+    $('.items').mouseleave(function(){
+      $(this).children().css('animation-play-state', 'paused');
+    });
+  </script>
+</body>
+</html>

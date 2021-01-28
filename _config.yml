@@ -314,7 +314,7 @@ defaults:
 # safe: False
 # lsi: False
 # username: hkwon31 # Github Username
-# repo: blog # Github repo name
+## repo: blog # Github repo name
 # branch: master # 작업 브랜치를 설정
 # relative_source: ../blog/ # 저는 repo 이름으로 설정했습니다.
 # destination: ../posts # 빌드시 작업파일이 저장될 경로
