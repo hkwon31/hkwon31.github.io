@@ -8,54 +8,51 @@
 <body>
   <div class="container">
     <div class="grid-items">
-      <a href="#none" class="base-loading">
+      <div href="#none" class="base-loading grid-box">
         <h3>Base Loading</h3>
         <div class="items">
           <span></span>
           <span></span>
           <span></span>
         </div>
-      </a>
-      <a href="#none" class="square-loading">
+      </div>
+      <div href="#none" class="square-loading grid-box">
        <h3>Square Loading</h3>
        <div class="square-items">
          <span></span>
          <span></span>
        </div>
-      </a>
-      <a href="#none" class="double-border-radius">
+      </div>
+      <div href="#none" class="double-border-radius grid-box">
         <h3>Double Border Radius</h3>
         <div class="db-items">
           <span></span>
           <span></span>
           <span></span>
         </div>
-      </a>
-      <a href="#none">test</a>
-      <a href="#none">test</a>
-      <a href="#none">test</a>
-      <a href="#none">test</a>
+      </div>
+      <div href="#none" class="base-dropdown grid-box">
+        <div class="left">
+          <h3>Dropdown Menu</h3>
+        </div>
+        <div class="right">
+          <button class="dropbutton">Dropdown</button>
+          <div class="dropdown-menu">
+            <a href="" class="box">MENU1</a>
+            <a href="" class="box">MENU2</a>
+            <a href="" class="box">MENU3</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script>
-    $('.items').mouseenter(function(){
+    $('.items, .square-items, .db-items').mouseenter(function(){
       $(this).children().css('animation-play-state', 'running');
     })
-    $('.items').mouseleave(function(){
+    $('.items, .square-items, .db-items').mouseleave(function(){
       $(this).children().css('animation-play-state', 'paused');
-    });
-    $('.square-items').mouseenter(function() {
-      $(this).children().css('animation-play-state', 'running');
-    });
-    $('.square-items').mouseleave(function() {
-      $(this).children().css('animation-play-state', 'paused');
-    });
-    $('.db-items').mouseenter(function() {
-      $(this).children('span').css('animation-play-state', 'running');
-    });
-    $('.db-items').mouseleave(function() {
-      $(this).children('span').css('animation-play-state', 'paused');
     });
   </script>
 </body>
