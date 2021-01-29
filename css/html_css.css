@@ -6,6 +6,8 @@
 
 .grid-items .grid-box {
   margin: 10px;
+  width: 300px;
+  height: 300px;
   text-align: center;
   border: 2px solid black;
   text-decoration: none;
@@ -176,14 +178,14 @@
 }
 
 .base-dropdown .right button {
-  width: 50%;
+  width: 70%;
   background-color: limegreen;
   border-style: none;
   outline: none;
 }
 
 .dropdown-menu {
-  width: 50%;
+  width: 70%;
   display: none;
   margin: auto;
 }
@@ -204,5 +206,46 @@
 .box:hover {
   background-color: #eee;
 }
+
+.base-hover {
+  background-image: url('/images/commodity.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.base-hover-items {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 0.8em;
+  background-color: black;
+  height: 100%;
+  text-overflow: clip;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.base-hover-items:hover {
+  opacity: 1;
+}
+
+.base-hover-items p{
+  margin-bottom: 15px;
+}
+.base-hover-items a{
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+}
+.base-hover-items a:hover{
+  color: black;
+  background-color: white;
+}
+
+
+
 
 
