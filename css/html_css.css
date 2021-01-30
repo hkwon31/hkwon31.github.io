@@ -17,12 +17,23 @@
   position: relative;
 }
 
+.items {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  margin: auto;
+}
+
 .base-loading .items span {
   display: inline-block;
   border: 1px solid black;
   border-radius: 50%;
-  height: 20px;
-  width: 10px;
+  height: 45px;
+  width: 45px;
+  margin: 5px;
+  box-sizing: border-box;
   animation: base-loading 1s linear infinite;
   animation-play-state: paused;
 }
@@ -53,17 +64,20 @@
 }
 
 .square-items {
-  height: 50px;
-  width: 50px;
+  width: 150px;
+  height: 150px;
   margin: auto;
   margin-bottom: 5px;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .square-items span {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   top: 0;
   left: 0;
@@ -109,19 +123,21 @@
 
 .db-items {
   margin: auto;
-  height: 50px;
-  width: 50px;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  position: relative;
 }
 
 .db-items span{
   position: absolute;
-  display: block;
+  left: 25px;
+  width: 150px;
+  height: 150px;
   border: 3px solid darkgray;
   border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
-  width: inherit;
-  height: inherit;
-  bottom: 20%;
   transition: 0.5s;
+  bottom: 10px;
 }
 
 .db-items span:nth-child(1){
