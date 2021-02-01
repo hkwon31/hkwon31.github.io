@@ -365,6 +365,7 @@
 
 .back {
   background-color: white;
+  opacity: 0;
 }
 
 .front img {
@@ -393,6 +394,7 @@
 }
 .fr-bk:hover .back {
   top: 50%;
+  opacity: 1;
 }
 .fr-bk:hover .front img {
   animation: img-sc 1s linear infinite;
