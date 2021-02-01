@@ -345,3 +345,69 @@
   margin: 5px;
 }
 
+.fr-bk {
+  background-color: #433838;
+  border: none;
+}
+
+.front, .back {
+  position: absolute;
+  top: 25%;
+  height: 50%;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.front {
+  background-color: #333;
+  z-index: 1;
+}
+
+.back {
+  background-color: white;
+}
+
+.front img {
+  margin-top: 10px;
+  height: 60%;
+}
+
+.front h3 {
+  margin: 5px 0;
+}
+
+.back a {
+  background-color: skyblue;
+  padding: 7px 10px;
+  border-radius: 50px;
+  color: black;
+  text-decoration: none;
+}
+.back a:hover {
+  color: white;
+  background-color: black;
+}
+
+.fr-bk:hover .front {
+  top: 0;
+}
+.fr-bk:hover .back {
+  top: 50%;
+}
+.fr-bk:hover .front img {
+  animation: img-sc 1s linear infinite;
+}
+
+@keyframes img-sc {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+
+
+
+
