@@ -409,6 +409,43 @@
   }
 }
 
+.skewed-box {
+  height: 80px;
+  width: 200px;
+  transform: rotate(30deg) translate(120px, 100px) skewX(-20deg);
+  background-color: #eee;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.skewed-box:hover {
+  box-shadow: 25px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.skewed-box img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 200px;
+  width: 80px;
+  transition: 0.5s;
+  transform: rotate(-90deg) translate(60px, -60px);
+}
+.skewed-box:hover img:nth-child(1){
+  transform: rotate(-90deg) translate(80px, -80px);
+  opacity: 0.2;
+}
+.skewed-box:hover img:nth-child(2){
+  transform: rotate(-90deg) translate(100px, -100px);
+  opacity: 0.4;
+}
+.skewed-box:hover img:nth-child(3){
+  transform: rotate(-90deg) translate(120px, -120px);
+  opacity: 0.6;
+}
+.skewed-box:hover img:nth-child(4){
+  transform: rotate(-90deg) translate(140px, -140px);
+  opacity: 0.8;
+}
 
 
 
