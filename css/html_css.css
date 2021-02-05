@@ -6,7 +6,7 @@
 
 .grid-items .grid-box {
   margin: 5px 0;
-  width: 350px;
+  width: 370px;
   height: 300px;
   text-align: center;
   border: 2px solid black;
@@ -15,6 +15,12 @@
   font-size: 14px;
   display: block;
   position: relative;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .items {
@@ -448,7 +454,6 @@
 }
 
 .long {
-  width: 1100px;
   margin: 5px 0;
   grid-column-start: 2;
   grid-column-end: 5;
@@ -509,19 +514,24 @@
 .emoji-items {
   background-color: #eee;
   margin: 0;
-  padding: 20px;
+  height: 60%;
+  width: 80%;
+  display: inline-block;
+  padding: 10px;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.21);
 }
 .emoji-items a {
   display: inline-block;
-  border: 1px solid #fff;
   background-color: #fff;
+  box-sizing: border-box;
+  border: 3px solid #fff;
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+  line-height: 100px;
   text-align: center;
-  line-height: 60px;
   font-size: 40px;
   position: relative;
   overflow: hidden;
@@ -555,14 +565,123 @@
   background-color: #e4405f;
 }
 
-.emoji-items a > svg{
+.emoji-items a .fa{
   position: relative;
   transition: 0.5s;
 }
 
-.emoji-items a:hover svg {
+.emoji-items a:hover .fa {
   transform: rotateY(360deg);
 }
+
+.pre-long {
+/*  width: 1050px;*/
+  margin: 5px 0;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  border: 2px solid black;
+  position: relative;
+  background: linear-gradient(90deg, #DCE35B, #45B649);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pre-long .hover-gnb {
+  display: flex;
+  border-radius: 10px;
+  background-color: #f3ebeb;
+  width: 98%;
+  height: 60px;
+}
+.pre-long .hover-gnb a {
+  font-size: 24px;
+  flex-grow: 1;
+  position: relative;
+  line-height: 60px;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+}
+.pre-long .hover-gnb a:before,
+.pre-long .hover-gnb a:after{
+  position: absolute;
+  width: 100%;
+  content: attr(data-link);
+  transition: 0.5s;
+}
+.pre-long .hover-gnb a:before{
+  color: rgba(4, 4, 4, 0.41);
+  top: 0;
+  left: 0;
+}
+.pre-long .hover-gnb a:after{
+  color: #79a128;
+  top: 100%;
+  left: 0;
+}
+.pre-long .hover-gnb a:hover:before{
+  top: -100%;
+}
+.pre-long .hover-gnb a:hover:after{
+  top: 0%;
+}
+
+.items {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.item {
+  position: relative;
+  width: 200px;
+}
+
+.item input[type=email],
+.item input[type=tel],
+.item input[type=text] {
+  width: inherit;
+  height: 40px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 50px;
+  outline: none;
+}
+
+.item .fa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+/*  color: gray;*/
+  background-color: gray;
+  color: white;
+}
+
+.item input:focus {
+  border: 1px solid dodgerblue;
+}
+.item input:focus + .fa {
+  color: dodgerblue;
+}
+
+.item input:focus::placeholder {
+  visibility: hidden;
+}
+
+
+
+
+
 
 
 
