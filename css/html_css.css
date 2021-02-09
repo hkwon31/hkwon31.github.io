@@ -1,11 +1,11 @@
 .grid-items {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(180px, auto);
+/*  grid-template-columns: repeat(4, 1fr);*/
+  grid-auto-columns: minmax(370px, 370px);
 }
 
 .grid-items .grid-box {
-  margin: 5px 0;
+  margin: 5px 0px;
   width: 370px;
   height: 300px;
   text-align: center;
@@ -13,7 +13,6 @@
   text-decoration: none;
   color: black;
   font-size: 14px;
-  display: block;
   position: relative;
 }
 
@@ -678,6 +677,48 @@
   visibility: hidden;
 }
 
+.skill-progress {
+  color: white!important;
+}
+.skill-progress:hover .skill-item .progress-bar .bar {
+  animation-play-state: running;
+}
+
+.skill-item {
+  margin: 5px;
+}
+
+.skill-item p {
+  overflow: hidden;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.skill-item p span:first-child {
+  float: left;
+}
+.skill-item p span:last-child {
+  float: right;
+}
+.progress-bar {
+  height: 10px;
+  border: 1px solid white;
+  border-radius: 2px;
+  margin: 0px 1px;
+  margin-bottom: 5px;
+}
+.progress-bar .bar {
+  height: 100%;
+  background: linear-gradient(90deg, green, yellow);
+  animation: progress-bar 2s linear infinite;
+  animation-play-state: paused;
+}
+
+
+@keyframes progress-bar {
+  0% {
+    width: 0%;
+  }
+}
 
 
 
