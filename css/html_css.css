@@ -748,10 +748,87 @@
   }
 }
 
+.acordian-box {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  height: 600px;
+  border: 2px solid black;
+}
+
+.acordian {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.acordian li {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  border-right: 3px solid black;
+  overflow: hidden;
+  transition: 0.5s;  
+}
+
+.acordian-content {
+  color: white;
+  text-align: center;
+  position: absolute;
+  background-color: #333;
+  height: 200px;
+  padding-top: 50px;
+  bottom: -300px;
+  left: 0;
+  transition: 0.5s;
+}
 
 
+.acordian li:last-child {
+  border-right: none;
+}
 
+.acordian li:nth-child(1) {
+  background: url('/images/acordian1.jpg') no-repeat center center; 
+}
+.acordian li:nth-child(2) {
+  background: url('/images/acordian2.jpg') no-repeat center center; 
+}
+.acordian li:nth-child(3) {
+  background: url('/images/acordian3.jpg') no-repeat center center; 
+}
+.acordian li:nth-child(4) {
+  background: url('/images/acordian4.jpg') no-repeat center center; 
+}
+.acordian li:nth-child(5) {
+  background: url('/images/acordian5.jpg') no-repeat center center; 
+}
 
+.acordian:hover li {
+  flex: 1;
+}
+.acordian li:hover {
+  flex: 3;
+  filter: grayscale(1);
+}
+.acordian li:hover .acordian-content {
+  bottom: 0;
+  transition-delay: 0.5s;
+}
+
+.acordian-content:before {
+  content: '';
+  transform: rotate(-5deg);
+  transform-origin: top left;
+  background-color: #333;
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  top: 4px;
+  left: 0;
+}
 
 
 
