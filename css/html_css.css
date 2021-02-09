@@ -679,8 +679,12 @@
 
 .skill-progress {
   color: white!important;
+  background-color: rgba(25, 23, 23, 0.58);
 }
 .skill-progress:hover .skill-item .progress-bar .bar {
+  animation-play-state: running;
+}
+.skill-progress:hover .skill-item .progress-bar-delay .bar {
   animation-play-state: running;
 }
 
@@ -699,7 +703,7 @@
 .skill-item p span:last-child {
   float: right;
 }
-.progress-bar {
+.progress-bar, .progress-bar-delay {
   height: 10px;
   border: 1px solid white;
   border-radius: 2px;
@@ -712,7 +716,31 @@
   animation: progress-bar 2s linear infinite;
   animation-play-state: paused;
 }
+.progress-bar-delay .bar {
+  height: 100%;
+  background: linear-gradient(90deg, green, yellow);
+  animation-name: progress-bar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+}
 
+.progress-bar-delay .bar:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.progress-bar-delay .bar:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+.progress-bar-delay .bar:nth-of-type(3) {
+  animation-delay: 0.4s;
+}
+.progress-bar-delay .bar:nth-of-type(4) {
+  animation-delay: 0.6s;
+}
+.progress-bar-delay .bar:nth-of-type(5) {
+  animation-delay: 0.8s;
+}
 
 @keyframes progress-bar {
   0% {
