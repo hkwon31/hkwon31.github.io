@@ -1079,6 +1079,92 @@ input[id=tabb3]:checked ~ .contents .heading-script .script3 {
   transition-delay: 0.5s
 }
 
+.testimonial-div {
+  height: 280px;
+}
+
+.testimonial-div input {
+  display: none;
+}
+
+.testimonial-div .t-inner-btns {
+  margin-top: 5px;
+}
+
+.testimonial-div .t-inner-btns label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+
+.t-inner {
+  height: 200px;
+  width: 300px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+/*  padding: 20px;*/
+}
+
+.t-inner-contents {
+  width: 900px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.t-inner-contents div {
+  float: left;
+  width: 300px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+input[id=t-tab1]:checked ~ .t-inner .t-inner-contents {
+  left: 0;
+}
+input[id=t-tab2]:checked ~ .t-inner .t-inner-contents {
+  left: -300px;
+}
+input[id=t-tab3]:checked ~ .t-inner .t-inner-contents {
+  left: -600px;
+}
+
+input[id=t-tab1]:checked ~ .t-inner-btns label[for=t-tab1],
+input[id=t-tab2]:checked ~ .t-inner-btns label[for=t-tab2],
+input[id=t-tab3]:checked ~ .t-inner-btns label[for=t-tab3] {
+  border-radius: 50%;
+  background-color: crimson;
+}
+
+.t-inner-contents div {
+  padding: 10px;
+  font-size: 12px;
+}
+.t-inner-contents div img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.t-inner-contents div p b {
+  display: block;
+}
+.t-inner-contents div p span {
+  color: orange;
+}
+
+
+
+
+
+
+
 
 
 
