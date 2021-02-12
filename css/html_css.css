@@ -1,3 +1,7 @@
+.body {
+  position: relative;
+}
+
 .grid-items {
   display: grid;
 /*  grid-template-columns: repeat(4, 1fr);*/
@@ -1167,7 +1171,7 @@ input[id=t-tab3]:checked ~ .t-inner-btns label[for=t-tab3] {
 .full-screen-slider a {
   text-decoration: none;
   color: black;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 20px;
   background-color: lightgray;
   padding: 5px;
