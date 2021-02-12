@@ -1,0 +1,66 @@
+::-webkit-file-upload-button { cursor:pointer; }
+body {
+  margin: 0;
+  padding: 0;
+}
+.tabs {
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+}
+.items {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 100%;
+  transition: 0.3s;
+}
+.items div {
+  height: 100%;
+  width: 33.3333333%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  float: left;
+}
+.items div:nth-child(1) {
+  background-color: teal;
+}
+.items div:nth-child(2) {
+  background-color: dodgerblue;
+}
+.items div:nth-child(3) {
+  background-color: crimson;
+}
+input[name=slider] {
+  display: none;
+}
+.btns {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  text-align: center;
+  height: 10px;
+}
+.btns label {
+  display: inline-block;
+  height: 3px;
+  width: 25px;
+  background-color: lightgray;
+}
+input[id=tab1]:checked ~ .btns label[for=tab1],
+input[id=tab2]:checked ~ .btns label[for=tab2],
+input[id=tab3]:checked ~ .btns label[for=tab3] {
+  background-color: black;
+}
+input[id=tab1]:checked ~ .items {
+  left: 0;
+}
+input[id=tab2]:checked ~ .items {
+  left: -100%;
+}
+input[id=tab3]:checked ~ .items {
+  left: -200%;
+}

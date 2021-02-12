@@ -1159,9 +1159,24 @@ input[id=t-tab3]:checked ~ .t-inner-btns label[for=t-tab3] {
   color: orange;
 }
 
+.full-screen-slider h3 {
+  font-size: 30px;
+  margin-bottom: 100px;
+}
 
+.full-screen-slider a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: lightgray;
+  padding: 5px;
+}
 
-
+.full-screen-slider a:hover {
+  background-color: dodgerblue;
+  color: white;
+}
 
 
 
