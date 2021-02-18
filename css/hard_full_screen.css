@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+input[type=radio] {
+  display: none;
+}
+.items {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 300%;
+  transition: 0.5s;
+}
+.items div {
+  width: 33.3333%;
+  height: 100vh;
+  float: left;
+  position: relative;
+}
+.items div:nth-child(1) {
+  background: url(/images/photo-01.jpg) no-repeat center center;
+  background-size: cover;
+}
+.items div:nth-child(2) {
+  background: url(/images/photo-02.jpg) no-repeat center center;
+  background-size: cover;
+}
+.items div:nth-child(3) {
+  background: url(/images/photo-03.jpg) no-repeat center center;
+  background-size: cover;
+}
+.items div:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+}
+.items div:nth-child(1):before {
+  background: linear-gradient(135deg, gold, transparent); 
+}
+.items div:nth-child(2):before {
+  background: linear-gradient(135deg, crimson, transparent); 
+}
+.items div:nth-child(3):before {
+  background: linear-gradient(135deg, royalblue, transparent); 
+}
+.items div h1 {
+  position: relative;
+  font-size: 40px;
+  text-align: center;
+  transform: translateY(-200px);
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  opacity: 0;
+}
+.btns {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.29);
+}
+.btns label {
+  margin: 10px;
+  cursor: pointer;
+}
+input[id=tab1]:checked ~ .items {
+  left: 0;
+}
+input[id=tab2]:checked ~ .items {
+  left: -100%;
+}
+input[id=tab3]:checked ~ .items {
+  left: -200%;
+}
+input[id=tab1]:checked ~ .btns label[for=tab1],
+input[id=tab2]:checked ~ .btns label[for=tab2],
+input[id=tab3]:checked ~ .btns label[for=tab3]{
+  color: crimson;
+}
+input[id=tab1]:checked ~ .items div:nth-child(1) h1,
+input[id=tab2]:checked ~ .items div:nth-child(2) h1,
+input[id=tab3]:checked ~ .items div:nth-child(3) h1 {
+  transform: translateY(150px);
+  opacity: 1;
+}
