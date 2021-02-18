@@ -1302,15 +1302,27 @@ input[id=t-tab3]:checked ~ .t-inner-btns label[for=t-tab3] {
   position: relative;
   width: 200px;
   height: 30px;
-  color: black;
+  color: white;
   text-decoration: none;
+  transition: 0.5s;
 }
 .hover-rotate-box a:before,
 .hover-rotate-box a:after {
+  content: '';
   position: absolute;
-  background-color: black;
+  border: 1px solid lightgray;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  transition: 0.5s;
+}
+.hover-rotate-box a:hover {
+  letter-spacing: 3px;
+}
+.hover-rotate-box a:hover:before {
+  transform: rotate(45deg);
+}
+.hover-rotate-box a:hover:after {
+  transform: rotate(-45deg);
 }
