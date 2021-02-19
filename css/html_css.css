@@ -1326,3 +1326,67 @@ input[id=t-tab3]:checked ~ .t-inner-btns label[for=t-tab3] {
 .hover-rotate-box a:hover:after {
   transform: rotate(-45deg);
 }
+.custom-radio-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.custom-radio-div input[type=radio] {
+  display: none;
+}
+.custom-radio-div label em {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  vertical-align: middle;
+  margin-right: 2px;
+  background: url('/images/radio-01.png') no-repeat;
+  background-position: left center;
+}
+.custom-radio-div input[type=radio]:checked + label em {
+  background-position: right center;
+}
+.custom-radio-div input[type=radio]:checked + label {
+  color: crimson;
+}
+.custom-checkbox {
+  border: 1px solid black;
+  margin-top: 10px;
+  height: 40px;
+  width: 90%;
+}
+.custom-checkbox input[type=checkbox] {
+  display: none;
+}
+.custom-checkbox label {
+  line-height: 40px;
+  cursor: pointer;
+}
+.custom-checkbox label:before {
+  content: '\f00c';
+  font-family: fontawesome;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border: 0.5px solid #333;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-left: 10px;
+  vertical-align: middle;
+  line-height: 20px;
+  color: transparent;
+  background-color: crimson;
+  transition: 0.2s;
+}
+.custom-checkbox input[type=checkbox]:checked + label:before {
+  border-color: transparent;
+  color: white;
+}
+.custom-checkbox input[type=checkbox] + label:active:before {
+  transform: scale(0);
+  
+}
+
