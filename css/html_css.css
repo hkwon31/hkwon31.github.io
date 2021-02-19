@@ -1387,6 +1387,122 @@ input[id=t-tab3]:checked ~ .t-inner-btns label[for=t-tab3] {
 }
 .custom-checkbox input[type=checkbox] + label:active:before {
   transform: scale(0);
+}
+.whole-contents {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.whole-contents img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+}
+.whole-contents .contents {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  color: white;
+  padding-top: 130px;
+  background: linear-gradient(to top, crimson, transparent);
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.whole-contents .contents h3 {
   
 }
+.whole-contents .contents h3 span {
+  display: block;
+  font-size: 10px;
+  color: gold;
+}
+.whole-contents .contents p {
+  padding: 0 10px;
+}
+.whole-contents:hover .contents {
+  top: 0;
+}
+.whole-contents:hover {
+  transform: translateY(-5px);
+}
+.contents-items a {
+  color: white;
+}
+.login-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 200px;
+  background-color: rgba(211, 211, 211, 0.3);
+  text-align: left;
+  border-radius: 5px;
+  padding: 10px;
+}
+.login-div span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+.login-div span + input {
+  border: none;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 25px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 25px;
+}
+.login-div input[type=email] {
+  background: white url('/images/icon-email.png') no-repeat center left 5px;
+  background-size: 15px;
+}
+.login-div input[type=password] {
+  background: white url('/images/icon-lock.png') no-repeat center left 5px;
+  background-size: 15px;
+}
+.login-div input[type=email]:focus::placeholder,
+.login-div input[type=password]:focus::placeholder {
+  visibility: hidden;
+}
+.login-div p {
+  font-size: 12px;
+  overflow: hidden;
+  margin-top: 0px;
+}
+.login-div a,
+.login-div label {
+  height: 20px;
+  line-height: 20px;
+  color: black;
+}
+.login-div label {
+  float: left;
+}
+.login-div a {
+  float: right;
+  text-decoration: none;
+}
+.login-div a:hover {
+  text-decoration: underline;
+  color: royalblue;
+}
+.login-div button {
+  border: none;
+  background-color: royalblue;
+  border-radius: 5px;
+  color: white;
+  width: 200px;
+  height: 30px;
+  cursor: pointer;
+  transform: translateX(20%);
+}
+
+
 
