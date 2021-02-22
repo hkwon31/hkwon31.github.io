@@ -487,7 +487,84 @@
           </div>
         </form>
       </div>
-      <div class="grid-box"></div>
+      <div class="grid-box">
+        <div class="JQtestimonial">
+          <h3>Testimonial with JQeury</h3>
+          <div class="JQtestimonial-images">
+            <img class="active" src="/images/face-01.jpg" data-link="tab1">
+            <img src="/images/face-02.jpg" data-link="tab2">
+            <img src="/images/face-03.jpg" data-link="tab3">
+          </div>
+          <div class="infos">
+            <div id="JQtestimonial-tab1" class="info-JQtestimonial active">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, illum.</p>
+              <p>Developer Hkwon</p>
+            </div>
+            <div id="JQtestimonial-tab2" class="info-JQtestimonial">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt mollitia alias voluptatem quaerat corporis, ut magnam veniam impedit voluptatum tempora.</p>
+              <p>Developer SaeYol</p>
+            </div>
+            <div id="JQtestimonial-tab3" class="info-JQtestimonial">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat suscipit earum architecto eius commodi cupiditate.</p>
+              <p>Developer Brian</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-box">
+        <h1>Rating with JQuery</h1>
+        <div class="rating-stars">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <div class="result">
+            Click the star!!
+          </div>
+        </div>
+      </div>
+      <div class="grid-box">
+        <h1>TabMenu with JQuery</h1>
+        <a class="alink-btn" href="/tab_menu.html">View More</a>
+      </div>
+      <div class="grid-box">
+        <h1>Background Change with Jquery</h1>
+        <a class="alink-btn" href="/landing_page.html">View More</a>
+      </div>
+      <div class="grid-box" style="background-color: lightgray">
+        <div class="item-box">
+          <img src="/images/model-female.png">
+          <div class="details">
+            <div class="title">
+              <h2><span>Nightgown</span>Woman's Designer Wear</h2>
+              <em>$55.59</em>
+            </div>
+            <div class="ingredient">
+              <div class="size">
+                <h3>Sizes</h3>
+                <span class="active">XS</span>
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+              </div>
+              <div class="colors">
+                <h3>Colors</h3>
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <span class="heart"></span>
+            </div>
+            <button class="item-btn">Add to cart</button>
+          </div>
+        </div>
+      </div>
     </div>
     <input type="checkbox" id="menu-trigger">
     <label for="menu-trigger">
@@ -507,6 +584,42 @@
     $('.items, .square-items, .db-items').mouseleave(function(){
       $(this).children().css('animation-play-state', 'paused');
     });
+  </script>
+  <script>
+    $('.JQtestimonial-images img').click(function(){
+      var id = $(this).attr('data-link');
+      $(this).addClass('active');
+      $(this).siblings().removeClass('active');
+      $('.info-JQtestimonial').removeClass('active');
+      $('#JQtestimonial-' + id).addClass('active');
+    });
+    $('.stars .fa').click(function(){
+      $(this).addClass('active');
+      $(this).prevAll().addClass('active');
+      $(this).nextAll().removeClass('active');
+      
+      var num = $(this).index();
+      if (num==0) {
+        $('.result').html('<img src="/images/star-lv1.png">' + 'Very Bad...');
+      }else if (num==1) {
+        $('.result').html('<img src="/images/star-lv2.png">' + 'Bad...');
+      }else if (num==2) {
+        $('.result').html('<img src="/images/star-lv3.png">' + 'SoSo...');
+      }else if (num==3) {
+        $('.result').html('<img src="/images/star-lv4.png">' + 'Good!');
+      }else {
+        $('.result').html('<img src="/images/star-lv5.png">' + 'Excellant!!');
+      }
+    });
+    
+    $('.ingredient .size span, .colors span').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+      });
+
+    $('.ingredient .heart').click(function(){
+      $(this).toggleClass('active');
+    })
   </script>
 </body>
 </html>

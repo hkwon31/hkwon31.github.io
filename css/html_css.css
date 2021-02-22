@@ -1504,5 +1504,217 @@ input[id=t-tab3]:checked ~ .t-inner-btns label[for=t-tab3] {
   transform: translateX(20%);
 }
 
-
-
+.JQtestimonial {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;  
+}
+.JQtestimonial-images img {
+  width: 50px;
+  filter: grayscale(1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.JQtestimonial-images img.active{
+  filter: grayscale(0);
+  border-radius: 50%;
+}
+.info-JQtestimonial {
+  display: none;
+}
+.info-JQtestimonial p:last-child{
+  font-weight: bold;
+}
+.info-JQtestimonial.active {
+  display: block;
+}
+.rating-stars {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  width: 90%;
+  height: 50px;
+  background-color: darkgray;
+}
+.rating-stars div {
+  float: left;
+  margin-left: 10px;
+}
+.rating-stars .stars i {
+  font-size: 20px;
+  line-height: 50px;
+  margin: 0 2px;
+  color: white;
+  cursor: pointer;
+}
+.rating-stars .stars i.active {
+  color: yellow;
+}
+.result {
+  font-size: 20px;
+  line-height: 50px;
+  padding-left: 10px;
+  color: white;
+}
+.result img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.alink-btn {
+  border: 1px solid black;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+.alink-btn:hover {
+  color: white;
+  background-color: lightgray;
+}
+.item-box h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+.item-box {
+  margin: auto;
+  margin-top: 15px;
+  width: 70%;
+  height: 85%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 20px rgba(203, 103, 103, 0.47);
+}
+.item-box img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(211, 211, 211, 0.43);
+}
+.item-box .details {
+  background-color: white;
+  position: absolute;
+  bottom: -135px;
+  left: 0;
+  height: 75%;
+  width: 100%;
+  transition: 0.5s;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.item-box:hover .details {
+  bottom: 0;
+}
+.item-box:hover img {
+  filter: blur(2px);
+}
+.title {
+  overflow: hidden;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+.title h2 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+  float: left;
+  text-align: left;
+}
+.title h2 span {
+  font-weight: bold;
+  display: block;
+}
+.title em {
+  float: right;
+  font-weight: bold;
+  color: crimson;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.ingredient {
+  position: relative;
+}
+.ingredient .size {
+  margin-top: 5px;
+}
+.ingredient .size span {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  transition: 0.5s;
+  height: 20px;
+  line-height: 20px;
+  font-weight: 550;
+  margin-left: 2px;
+  padding: 2px;
+  cursor: pointer;
+}
+.ingredient .size span.active {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+}
+.ingredient .colors span{
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: gray;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.ingredient .colors span.active {
+  border-radius: 50%;
+}
+.ingredient .colors span:nth-of-type(1) {
+  background-color: crimson;
+}
+.ingredient .colors span:nth-of-type(2) {
+  background-color: royalblue;
+}
+.ingredient .colors span:nth-of-type(3) {
+  background-color: yellowgreen;
+}
+.ingredient .colors span:nth-of-type(4) {
+  background-color: lightgray;
+}
+.ingredient .colors span:nth-of-type(5) {
+  background-color: darkgreen;
+}
+.item-btn {
+  margin: auto;
+  margin-top: 5px;
+  display: block;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+  outline: none;
+}
+.item-btn:hover {
+  background-color: white;
+  color: green;
+}
+.heart:before {
+  content: "\f08a";
+  font-family: fontawesome;
+  top: 10px;
+  right: 0;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.heart.active:before {
+  content: "\f004";
+  color: crimson;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/landing_page.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</head>
+<body>
+  <ul>
+    <li data-image="/images/portrait-01.jpg"><a href="#none" data-alt="ABOUT">ABOUT</a></li>
+    <li data-image="/images/portrait-02.jpg"><a href="#none" data-alt="INSTRUCTOR">INSTRUCTOR</a></li>
+    <li data-image="/images/portrait-03.jpg"><a href="#none" data-alt="CLASS">CLASS</a></li>
+    <li data-image="/images/portrait-04.jpg"><a href="#none" data-alt="LOCATION">LOCATION</a></li>
+  </ul>
+  <div class="bgc"></div>
+  <script>
+    $('ul li').mouseenter(function(){
+      var image_link = $(this).attr('data-image');
+      $('.bgc').css({
+        'background-image': 'url(' + image_link + ')'
+      })
+    });
+    $('ul li').mouseleave(function(){
+      $('.bgc').css({'background-image':''})
+    })
+  </script>
+</body>
+</html>

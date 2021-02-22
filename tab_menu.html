@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/tab_menu.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>TabMenu Application</h1>
+    <input type="text" placeholder="Write anytthing...">
+    <ul class="items">
+      <li class="tabmenu active" data-alt="HTML">HTML</li>
+      <li class="tabmenu" data-alt="CSS">CSS</li>
+      <li class="tabmenu" data-alt="JAVASCRIPT">JAVASCRIPT</li>
+      <li class="tabmenu" data-alt="JQUERY">JQUERY</li>
+    </ul>
+    <div class="views active" id="HTML">
+      TABMENU1
+    </div>
+    <div class="views" id="CSS">
+      TABMENU2
+    </div>
+    <div class="views" id="JAVASCRIPT">
+      TABMENU3
+    </div>
+    <div class="views" id="JQUERY">
+      TABMENU4
+    </div>
+  </div>
+  <script>
+    $('.items li').click(function(){
+      var category = $(this).attr('data-alt');
+      $(this).addClass('active');
+      $(this).siblings().removeClass('active');
+      $('.views').removeClass('active');
+      $('#' + category).addClass('active');
+    });
+  </script>
+</body>
+</html>
