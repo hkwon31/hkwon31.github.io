@@ -1,0 +1,87 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+article {
+  width: 600px;
+  border: 1px solid black;
+}
+.title {
+  text-align: center;
+  border: 1px solid blue;
+}
+.title h1 {
+  color: crimson;
+}
+.title h3 {
+  font-weight: 300;
+}
+.title h3 em {
+  font-style: normal;
+  position: relative;
+}
+.title h3 em:after {
+  content: '\f1a0';
+  font-family: fontawesome;
+  color: #25de9e;
+  position: absolute;
+  top: -8px;
+  left: 52px;
+  transform: rotate(30deg);
+}
+.content > div {
+  width: 50%;
+  height: 380px;
+  border: 1px solid black;
+  float: left;
+  box-sizing: border-box;
+}
+.acordian {
+  padding: 15px;
+}
+.acordian > div {
+  margin: 5px;
+}
+.name {
+  padding-left: 5px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.name:after {
+  content: '\f105';
+  font-family: fontawesome;
+  float: right;
+  margin-right: 6px;
+  margin-top: 3px;
+  transition: 0.3s;
+}
+.name:hover,
+.name.active {
+  background-color: #0c1f58;
+  color: white;
+}
+.name:hover:after,
+.name.active:after {
+  transform: rotate(90deg);
+  color: orange;
+}
+.desc {
+  display: none;
+  padding-left: 2px;
+}
+.desc.active {
+  display: block;
+}
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.images img {
+  height: 90%;
+  width: 90%;
+}

@@ -1,0 +1,103 @@
+/*FontAwesom*/
+/*font-family: fontawesome*/
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/*Monoton WebFont*/
+/*font-family: 'Monoton', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+/*Montserrat WebFont*/
+/*font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.video-frame video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.logo img {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+.heading {
+  position: absolute;
+  width: 400px;
+  bottom: 50px;
+  left: 100px;
+  color: white;
+  animation: showing1 2s linear 1;
+}
+.heading h1 {
+}
+.heading h1 span {
+  display: block;
+  color: crimson;
+}
+.heading a {
+  border: 2px solid white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.heading p {
+  margin-bottom: 20px;
+}
+.a-book {
+  color: black;
+  background-color: #eee;
+}
+.a-learn {
+  color: white;
+}
+.a-book:hover {
+  background-color: black;
+  color: white;
+}
+.a-learn:hover {
+  background-color: #9a2c2c;
+  color: black;
+}
+.anniversary {
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+  text-align: center;
+  animation: showing2 2s linear 1;
+}
+.anniversary em {
+  display: block;
+  font-size: 42px;
+  margin-bottom: -20px;
+  font-style: normal;
+}
+.anniversary span {
+  font-family: 'Monoton', cursive;
+  font-size: 70px;
+}
+
+@keyframes showing1 {
+  0% {
+    opacity: 0;
+    margin-left: -100px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+@keyframes showing2 {
+  0% {
+    opacity: 0;
+    margin-right: -100px;
+  }
+  100% {
+    opacity: 1;
+    margin-right: 0;
+  }
+}

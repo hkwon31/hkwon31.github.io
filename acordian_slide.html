@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/acordian_slide.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+<section>
+  <article>
+    <div class="title">
+      <h1>TITLETITLETITLETITLETITLETITLE</h1>
+      <h3><em>Google</em> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, expedita.</h3>
+    </div>
+    <div class="content">
+      <div class="acordian">
+        <div class="name" data-alt="/images/app-capture-01.png">
+          Acordian Slide 01
+        </div>
+        <div class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita facilis similique eaque! Atque ullam, dolor sit, excepturi quis temporibus animi? Dolorum iure ducimus et commodi dolorem inventore aliquam, cupiditate, tempora!
+        </div>
+        <div class="name active" data-alt="/images/app-capture-02.png">
+          Acordian Slide 02
+        </div>
+        <div class="desc active">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat molestias itaque repudiandae dignissimos quo, debitis eveniet facilis, magnam, nobis, rem ratione ullam odit facere consequuntur exercitationem nisi inventore culpa at!
+        </div>
+        <div class="name" data-alt="/images/app-capture-03.png">
+          Acordian Slide 03
+        </div>
+        <div class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quo odit placeat alias dignissimos asperiores molestiae omnis ullam at nam recusandae illo impedit labore, hic vitae, ipsam officiis! Saepe, eum.
+        </div>
+        <div class="name" data-alt="/images/app-capture-04.png">
+          Acordian Slide 04
+        </div>
+        <div class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero et, veritatis similique. Quia omnis ullam, cum totam aliquid dolores, distinctio incidunt nostrum similique! Recusandae quasi laboriosam blanditiis voluptas tempora, debitis.
+        </div>
+      </div>
+      <div class="images">
+        <img src="/images/app-capture-02.png">
+      </div>
+    </div>
+  </article>
+  <script>
+    $('.name').click(function(){
+      $(this).addClass('active');
+      $(this).siblings('.name').removeClass('active');
+      $(this).siblings('.desc').stop().slideUp();
+      $(this).next().stop().slideDown();
+      
+      var image_link = $(this).attr('data-alt');
+      $('.images img').attr('src', image_link);
+    });
+  </script>
+</section>
+</html>
