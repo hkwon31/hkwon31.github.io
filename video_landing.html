@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <link rel="stylesheet" href="/css/video_landing.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -23,6 +23,31 @@
     <div class="anniversary">
       <em>Anniversary</em><span>60</span>
     </div>
+    <div class="navigator">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="navi-gnb">
+      <div class="gnb">
+        <a href="#none">Attractions</a>
+        <a href="#none">Hotels&Spa</a>
+        <a href="#none">Shop&Dine</a>
+        <a href="#none">Celebrate</a>
+        <a href="#none">Promotions</a>
+      </div>
+    </div>
   </div>
+  <audio src="/video_landing/piano-bgm.mp3" autoplay loop controls id="bgmAudio"></audio>
+  <script>
+    $('.navigator').click(function() {
+      $(this).toggleClass('active');
+    });
+    $('.navigator').click(function() {
+      $('.navi-gnb').fadeToggle();
+    });
+    var bgm = document.getElementById('bgmAudio');
+    bgm.volume = 0.2;
+  </script>
 </body>
 </html>
