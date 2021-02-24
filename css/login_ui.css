@@ -1,0 +1,91 @@
+body,
+div,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  height: 50px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  padding-top: 7px;
+  box-sizing: border-box;
+}
+section {
+  background-color: lightgray;
+  height: calc(100vh - 50px);
+  position: relative;
+}
+.login-elem {
+/*  border: 1px solid blue;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.login-elem h1 {
+  margin-bottom: 30px;
+  letter-spacing: 10px;
+}
+.or-link {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 300px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.or-link:before,
+.or-link:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 44%;
+  height: 1px;
+  background-color: #382b2b;
+}
+.or-link:before {
+  left: 0;
+}
+.or-link:after {
+  right: 0;
+}
+.box {
+  border: 1px solid black;
+  display: block;
+  color: white;
+  text-decoration: none;
+  height: 50px;
+  width: 300px;
+  line-height: 50px;
+  margin-bottom: 10px;
+  opacity: 1;
+  transition: 0.2s;
+}
+.box:nth-of-type(1) {
+  background: white url('/login_ui/logo-mobile.png') no-repeat center left 10px;
+  margin-bottom: 0;
+  color: rgba(102, 90, 90, 0.45);
+}
+.box:nth-of-type(2) {
+  background: gray url('/login_ui/logo-email.png') no-repeat center left 13px;
+}
+.box:nth-of-type(3) {
+  background: #4faf4f url('/login_ui/logo-naver.png') no-repeat center left 13px;
+}
+.box:nth-of-type(4) {
+  background: royalblue url('/login_ui/logo-facebook.png') no-repeat center left 13px;
+}
+.box:nth-of-type(5) {
+  background: #4faf4f url('/login_ui/logo-line.png') no-repeat center left 10px;
+}
+.box:hover {
+  opacity: 0.8;
+}
+.login-footer {
+  text-align: left;
+}
+.login-footer p {
+  text-align: center;
+}
