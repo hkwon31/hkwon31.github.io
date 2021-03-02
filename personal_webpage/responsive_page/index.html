@@ -1,59 +1,104 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-
-	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
-	<title>Page Scroll Effects | CodyHouse</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <title>Coding Design Sample</title>
+  <!--  Page Scropt Effect js & css-->
+  <script src="js/jquery-2.1.4.js"></script>
+<!--  <script src="js/velocity/modernizr.js"></script>-->
+  <script src="js/velocity/velocity.min.js"></script>
+  <script src="js/velocity/velocity.ui.min.js"></script>
+  <script src="js/velocity/main.js"></script>
+  <link rel="stylesheet" href="js/velocity/velocity.css">
+  <!--  Custom js & css-->
+  <script src="custom.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
 </head>
 <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
 
-<body data-hijacking="off" data-animation="scaleDown">
-	<section class="cd-section visible">
-		<div>
-			<h2>Page Scroll Effects</h2>
-		</div>
-	</section>
-
-	<section class="cd-section">
-		<div>
-			<h2>Section 2</h2>
-		</div>
-	</section>
-
-	<section class="cd-section">
-		<div>
-			<h2>Section 3</h2>
-		</div>
-	</section>
-
-	<section class="cd-section">
-		<div>
-			<h2>Section 4</h2>
-		</div>
-	</section>
-
-	<section class="cd-section">
-		<div>
-			<h2>Section 5</h2>
-		</div>
-	</section>
-
-	<nav>
-		<ul class="cd-vertical-nav">
-			<li><a href="#0" class="cd-prev inactive">Next</a></li>
-			<li><a href="#0" class="cd-next">Prev</a></li>
-		</ul>
-	</nav> <!-- .cd-vertical-nav -->
-<script src="js/jquery-2.1.4.js"></script>
-<script src="js/velocity.min.js"></script>
-<script src="js/velocity.ui.min.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+<body data-hijacking="on" data-animation="rotate">
+  <div class="container">
+    <section class="cd-section visible">
+      <div>
+        <div class="content">
+          <img src="images/temp-section-01.jpg">
+        </div>
+      </div>
+    </section>
+    <section class="cd-section">
+      <div>
+        <div class="content">
+          <img src="images/temp-section-02.jpg">
+        </div>
+      </div>
+    </section>
+    <section class="cd-section">
+      <div>
+        <div class="content">
+          <img src="images/temp-section-03.jpg">
+        </div>
+      </div>
+    </section>
+    <section class="cd-section">
+      <div>
+        <div class="content">
+          <img src="images/temp-section-04.jpg">
+        </div>
+      </div>
+    </section>
+    <section class="cd-section">
+      <div>
+        <div class="content">
+          <img src="images/temp-section-05.jpg">
+        </div>
+      </div>
+    </section>
+    <section class="cd-section">
+      <div>
+        <div class="content">
+          <img src="images/temp-section-06.jpg">
+        </div>
+      </div>
+    </section>
+    <section class="cd-section">
+      <div>
+        <div class="content">
+          <img src="images/temp-section-07.jpg">
+        </div>
+      </div>
+    </section>
+    <header>
+      <div class="gnb-inner">
+        <div class="logo">
+          <a href="#none"><img src="images/logo.png"></a>
+        </div>
+        <div class="gnb">
+          <div class="menu">
+            <a href="#none">Home</a>
+            <a href="#none">About</a>
+            <a href="#none">Project</a>
+            <a href="#none">Plan & History</a>
+            <a href="#none">Awards</a>
+            <a href="#none">Location</a>
+            <a href="#none">Contact</a>
+          </div>
+          <div class="slogan">
+            We design places, not projects.
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+  
+  <nav>
+    <ul class="cd-vertical-nav">
+      <li><a href="#0" class="cd-prev inactive">Next</a></li>
+      <li><a href="#0" class="cd-next">Prev</a></li>
+    </ul>
+  </nav> <!-- .cd-vertical-nav -->
 </body>
+
 </html>

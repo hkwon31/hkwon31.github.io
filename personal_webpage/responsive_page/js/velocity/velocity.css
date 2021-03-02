@@ -46,17 +46,10 @@ Main Components
     overflow: hidden;
   }
 }
-
-.cd-section {
-  height: 100vh;
-}
 .cd-section h2 {
   line-height: 100vh;
   text-align: center;
   font-size: 2.4rem;
-}
-.cd-section:first-of-type > div {
-  background-color: #2b334f;
 }
 .cd-section:first-of-type > div::before {
   /* alert -> all scrolling effects are not visible on small devices */
@@ -70,18 +63,6 @@ Main Components
   font-size: 1.3rem;
   text-transform: uppercase;
   color: #6a7083;
-}
-.cd-section:nth-of-type(2) > div {
-  background-color: #2e5367;
-}
-.cd-section:nth-of-type(3) > div {
-  background-color: #267481;
-}
-.cd-section:nth-of-type(4) > div {
-  background-color: #fcb052;
-}
-.cd-section:nth-of-type(5) > div {
-  background-color: #f06a59;
 }
 [data-animation="parallax"] .cd-section > div, [data-animation="fixed"] .cd-section > div, [data-animation="opacity"] .cd-section > div {
   background-position: center center;
@@ -195,7 +176,7 @@ Main Components
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background: url(../img/cd-icon-arrow.svg) no-repeat center center;
+  background: url(cd-icon-arrow.svg) no-repeat center center;
 }
 .cd-vertical-nav a.cd-prev {
   -webkit-transform: rotate(180deg);
