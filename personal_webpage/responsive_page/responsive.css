@@ -13,7 +13,14 @@
   }
   
   /* header */
-   .gnb {
+  header {
+    transition: 0.5s;
+  }
+  header.active {
+    background-color: white;
+    border-bottom: 1.5px solid gray;
+  }
+  .gnb {
     position: fixed;
     right: -270px;
     top: 0;
