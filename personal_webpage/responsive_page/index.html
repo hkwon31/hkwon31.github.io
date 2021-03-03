@@ -7,7 +7,7 @@
   <title>Coding Design Sample</title>
   <!--  Page Scropt Effect js & css-->
   <script src="js/jquery-2.1.4.js"></script>
-<!--  <script src="js/velocity/modernizr.js"></script>-->
+  <script src="js/velocity/modernizr.js"></script>
   <script src="js/velocity/velocity.min.js"></script>
   <script src="js/velocity/velocity.ui.min.js"></script>
   <script src="js/velocity/main.js"></script>
@@ -21,49 +21,49 @@
 
 <body data-hijacking="on" data-animation="rotate">
   <div class="container">
-    <section class="cd-section visible">
+    <section class="cd-section visible" id="home">
       <div>
         <div class="content">
           <img src="images/temp-section-01.jpg">
         </div>
       </div>
     </section>
-    <section class="cd-section">
+    <section class="cd-section" id="about">
       <div>
         <div class="content">
           <img src="images/temp-section-02.jpg">
         </div>
       </div>
     </section>
-    <section class="cd-section">
+    <section class="cd-section" id="project">
       <div>
         <div class="content">
           <img src="images/temp-section-03.jpg">
         </div>
       </div>
     </section>
-    <section class="cd-section">
+    <section class="cd-section" id="ph">
       <div>
         <div class="content">
           <img src="images/temp-section-04.jpg">
         </div>
       </div>
     </section>
-    <section class="cd-section">
+    <section class="cd-section" id="awards">
       <div>
         <div class="content">
           <img src="images/temp-section-05.jpg">
         </div>
       </div>
     </section>
-    <section class="cd-section">
+    <section class="cd-section" id="location">
       <div>
         <div class="content">
           <img src="images/temp-section-06.jpg">
         </div>
       </div>
     </section>
-    <section class="cd-section">
+    <section class="cd-section" id="contact">
       <div>
         <div class="content">
           <img src="images/temp-section-07.jpg">
@@ -77,17 +77,22 @@
         </div>
         <div class="gnb">
           <div class="menu">
-            <a href="#none">Home</a>
-            <a href="#none">About</a>
-            <a href="#none">Project</a>
-            <a href="#none">Plan & History</a>
-            <a href="#none">Awards</a>
-            <a href="#none">Location</a>
-            <a href="#none">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Project</a>
+            <a href="#ph">Plan & History</a>
+            <a href="#awards">Awards</a>
+            <a href="#location">Location</a>
+            <a href="#contact">Contact</a>
           </div>
           <div class="slogan">
             We design places, not projects.
           </div>
+        </div>
+        <div class="trigger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </header>
