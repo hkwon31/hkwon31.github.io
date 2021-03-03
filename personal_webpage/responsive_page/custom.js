@@ -8,15 +8,15 @@ $(function(){
     $('.gnb').removeClass('active');
   })
   //  Smooth Scrolling
-  $('.menu a').click(function(e){
+  $('.menu a, .gototop').click(function(e){
     $.scrollTo(this.hash || 0, 900);
   })
   $(window).scroll(function(){
     if ($(window).scrollTop() > 50) {
-      $('header').addClass('active');
+      $('header, .gototop').addClass('active');
     }
     else {
-      $('header').removeClass('active');
+      $('header, .gototop').removeClass('active');
     }
   })
 })

@@ -42,6 +42,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
 }
 .gnb-inner {
   height: 60px;
@@ -64,4 +65,26 @@ header {
 }
 .trigger {
   display: none;
+}
+.btn-hiring {
+  position: fixed;
+  right: 80px;
+  bottom: 80px;
+  background-color: black;
+  color: white;
+  height: 40px;
+  width: 120px;
+  line-height: 40px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid gray;
+  transition: 0.5s;
+}
+.btn-hiring .fa {
+  transform: rotateY(180deg);
+  margin-right: 7px;
+}
+.btn-hiring:active {
+  transform: scale(0.5);
 }

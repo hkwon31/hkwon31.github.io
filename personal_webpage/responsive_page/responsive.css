@@ -87,6 +87,26 @@
     top: 50%;
     transform: rotate(-45deg);
   }
-  
-  
+  .gototop {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .gototop.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .btn-hiring {
+    right: 20px;
+    bottom: 20px;
+  }
 }
