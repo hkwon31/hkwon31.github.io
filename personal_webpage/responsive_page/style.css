@@ -8,9 +8,17 @@
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 /* Reset CSS */
-* { box-sizing: border-box; }
-ul { list-style: none; }
-a { text-decoration: none; }
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
 
 /* Default CSS */
 body {
@@ -21,13 +29,16 @@ body {
   height: 100vh;
   background-color: #fff;
 }
+
 .cd-section {
   height: 100vh;
 }
+
 .cd-section > div {
   height: 100%;
   position: relative;
 }
+
 .content {
   position: absolute;
   background-color: #ddd;
@@ -37,9 +48,11 @@ body {
   bottom: 20px;
   overflow: hidden;
 }
+
 .content > div {
- height: 100%; 
+  height: 100%;
 }
+
 header {
   position: fixed;
   top: 0;
@@ -47,28 +60,35 @@ header {
   width: 100%;
   z-index: 100;
 }
+
 .gnb-inner {
   height: 60px;
   width: calc(100% - 40px);
   margin: auto;
   line-height: 60px;
 }
+
 .logo {
   float: left;
 }
+
 .gnb {
   float: right;
 }
+
 .menu {
   display: none;
 }
+
 .slogan {
   font-size: 16px;
   font-style: italic;
 }
+
 .trigger {
   display: none;
 }
+
 .btn-hiring {
   position: fixed;
   right: 80px;
@@ -84,13 +104,16 @@ header {
   border: 1px solid gray;
   transition: 0.5s;
 }
+
 .btn-hiring .fa {
   transform: rotateY(180deg);
   margin-right: 7px;
 }
+
 .btn-hiring:active {
   transform: scale(0.5);
 }
+
 /*########################### About Section #################################*/
 .about-inner {
   background: url(images/line-drawing.png) no-repeat right bottom;
@@ -99,6 +122,7 @@ header {
   height: 100%;
   position: relative;
 }
+
 .about-content {
   position: absolute;
   top: 50%;
@@ -107,47 +131,131 @@ header {
   width: 950px;
   padding: 20px;
 }
+
 .about-content img {
   width: 10%;
   float: left;
   margin-right: 20px;
 }
+
 .about-content h2 {
   margin: 0;
   font-size: 1.4em;
   font-weight: 400;
 }
+
 .about-content p {
   overflow: hidden;
   font-size: 1em;
 }
+
 .about-item {
   padding: 10px 0;
 }
+
 .about-item h2,
 .about-item img {
   filter: invert(1);
 }
+
 .about-item {
   margin: 30px 0;
   cursor: pointer;
 }
+
 .about-item:hover h2,
 .about-item:hover img {
   filter: invert(0);
 }
+
+/*########################### Plan & Hisotry Section #################################*/
+.plan-div {
+  height: 100px;
+  background-color: #1d1b24;
+  position: relative;
+}
+.plan-div-inner {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.plan-div-inner > div {
+  height: 50%;
+}
+.plan-text {
+  color: lightcyan;
+  height: 100%;
+  width: 60%;
+  float: left;
+}
+.plan-text h2,
+.history h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+.plan-text hr.bar,
+.history hr.bar {
+  display: inline-block;
+  background-color: cadetblue;
+  height: 4px;
+  width: 40px;
+  margin: 20px 0;
+  margin-bottom: 10px;
+}
+.plan-text p {
+  font-size: 14px;
+  color: lightgray;
+}
+.plan-photo {
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+.plan-photo img {
+  width: 100%;
+  height: 90%;
+}
+.history {
+  color: lightgray;
+}
+.history-slider h3 {
+  color: white;
+}
+.history-slider h3 span {
+  color: cyan;
+}
+.history-slider p {
+  font-size: 12px;
+  line-height: 1.5em;
+}
+.history-slider .slick-arrow {
+  display: none!important;
+}
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+  color: floralwhite;
+  font-size: 28px;
+}
+
 /*########################### Award Section #################################*/
 .award-inner {
   width: 100%;
   height: 100%;
   background-color: #ddd;
 }
+
 .award-inner > div {
   width: 50%;
   height: 100%;
   float: left;
   position: relative;
 }
+
 .award-heading {
   position: absolute;
   top: 50%;
@@ -157,20 +265,24 @@ header {
   color: white;
   transform: translate(-50%, -50%);
 }
+
 .award-left {
   background-color: #1a1f24;
 }
+
 .bar {
   width: 50%;
   height: 2px;
   border: none;
   background-color: red;
 }
+
 .award-left p {
   color: #999;
   font-size: 17px;
   line-height: 1.5em;
 }
+
 .award-left a {
   border: 1px solid #bbb;
   color: #bbb;
@@ -178,6 +290,7 @@ header {
   border-radius: 20px;
   transition: 0.5s;
 }
+
 .award-left a:hover {
   border-color: transparent;
   background-color: #31c0ce;
@@ -188,6 +301,7 @@ header {
   background-color: white;
   border: 1px solid lightgray;
 }
+
 .award-right img {
   width: 80%;
   position: absolute;
@@ -202,6 +316,7 @@ header {
   background: url("images/background-location.jpg") no-repeat center center;
   height: 100%;
 }
+
 .feature:before {
   content: "";
   background-color: rgba(0, 0, 0, 0.9);
@@ -209,6 +324,7 @@ header {
   height: 100%;
   width: 100%;
 }
+
 .location-content {
   width: 70%;
   position: absolute;
@@ -216,43 +332,54 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .location-content > div {
   float: left;
   color: gray;
 }
+
 .office {
   width: 60%;
   padding-right: 100px;
 }
+
 .office > div {
   margin-bottom: 50px;
 }
+
 .office b {
   font-style: none;
 }
+
 .office h2 {
   color: #1db1f0;
   font-weight: 500;
   margin: 10px 0;
 }
+
 .office p {
   margin-bottom: 30px;
 }
+
 .office span {
   color: #fff;
 }
+
 .service {
   width: 40%;
 }
+
 .service-item .fa {
   color: royalblue;
   font-size: 40px;
   margin: 0;
-  margin-top : 10px;
+  margin-top: 10px;
 }
-.service-item:nth-of-type(1) .fa{
+
+.service-item:nth-of-type(1) .fa {
   margin: 0;
 }
+
 .service-item h3 {
   color: #fff;
   margin: 20px 0;
@@ -264,6 +391,7 @@ header {
   background-color: #fff;
   position: relative;
 }
+
 .content-inner-center {
   position: absolute;
   top: 50%;
@@ -272,38 +400,46 @@ header {
   height: 80%;
   width: 70%;
 }
+
 .content-inner-center > div {
   width: 50%;
   height: 100%;
   float: left;
   padding: 20px;
 }
+
 .content-form h2 {
   font-size: 32px;
   margin: 10px 0;
   font-weight: bold;
 }
+
 .content-form em {
   font-style: normal;
   font-weight: normal;
 }
+
 .content-form > span {
   display: inline-block;
   margin-bottom: 30px;
 }
+
 .content-form-inner label {
   display: block;
   margin: 10px 0;
   font-weight: bold;
   font-size: 14px;
 }
+
 .content-form-inner span {
   color: crimson;
   margin-left: 5px;
 }
+
 .content-form-inner input {
   height: 2em;
 }
+
 .content-form-inner input,
 .content-form-inner textarea {
   margin-left: 0;
@@ -312,16 +448,19 @@ header {
   width: 100%;
   outline: none;
 }
+
 .content-form-inner input:hover,
 .content-form-inner input:focus,
 .content-form-inner textarea:hover,
 .content-form-inner textarea:focus {
   border-color: #0088cc;
 }
+
 .content-form-inner input:focus,
 .content-form-inner textarea:focus {
   background-color: #ddd;
 }
+
 .content-form-inner button {
   margin-top: 10px;
   background-color: #0088cc;
@@ -333,24 +472,30 @@ header {
   text-transform: uppercase;
   outline: none;
 }
+
 .content-info > div {
   margin-bottom: 40px;
 }
+
 .content-info div h3 {
   font-weight: normal;
 }
+
 .content-info div h3 b {
   margin-left: 5px;
 }
+
 .content-info div span {
   display: block;
   margin: 10px 0;
   font-size: 12px;
 }
+
 .content-info div span:nth-of-type(3) {
   color: #0088cc;
   font-weight: bold;
 }
+
 .our-office span:before {
   font-family: fontawesome;
   display: inline-block;
@@ -363,19 +508,22 @@ header {
   border-radius: 50%;
   color: #0088cc;
 }
+
 .our-office span:nth-of-type(1):before {
   content: '\f041';
 }
+
 .our-office span:nth-of-type(2):before {
   content: '\f095';
 }
+
 .our-office span:nth-of-type(3):before {
   content: '\f0e0 ';
 }
+
 .business-hours span:before {
   content: '\f017 ';
   font-family: fontawesome;
-  margin-right: 10px;;
+  margin-right: 10px;
+  ;
 }
-
-
