@@ -131,7 +131,9 @@ header {
   width: 950px;
   padding: 20px;
 }
-
+.about-item h2{
+  color: black;
+}
 .about-content img {
   width: 10%;
   float: left;
@@ -193,7 +195,7 @@ header {
 }
 .plan-text h2,
 .history h2 {
-  color: white;
+
   font-size: 32px;
   font-weight: bold;
   margin: 0;
