@@ -101,19 +101,25 @@ header {
   top: 50%;
   transform: translateY(-50%);
   margin-left: 100px;
-  width: 50%;
-  height: 50%;
+  width: 950px;
+  padding: 20px;
 }
 .about-content img {
-  width: 100px;
+  width: 10%;
   float: left;
   margin-right: 20px;
 }
 .about-content h2 {
   margin: 0;
+  font-size: 1.4em;
+  font-weight: 400;
 }
 .about-content p {
   overflow: hidden;
+  font-size: 1em;
+}
+.about-item {
+  padding: 10px 0;
 }
 .about-item h2,
 .about-item img {
@@ -185,5 +191,70 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/*########################### Location Section #################################*/
+.content > div {
+  height: 100%;
+}
+.feature {
+  border: 1px solid #000;
+  background: url("images/background-location.jpg") no-repeat center center;
+  height: 100%;
+}
+.feature:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.location-content {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.location-content > div {
+  float: left;
+  color: gray;
+}
+.office {
+  width: 60%;
+  padding-right: 100px;
+}
+.office > div {
+  margin-bottom: 50px;
+}
+.office b {
+  font-style: none;
+}
+.office h2 {
+  color: #1db1f0;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.office p {
+  margin-bottom: 30px;
+}
+.office span {
+  color: #fff;
+}
+.service {
+  width: 40%;
+}
+.service-item .fa {
+  color: royalblue;
+  font-size: 40px;
+  margin: 0;
+  margin-top : 10px;
+}
+.service-item:nth-of-type(1) .fa{
+  margin: 0;
+}
+.service-item h3 {
+  color: #fff;
+  margin: 20px 0;
 }
 
