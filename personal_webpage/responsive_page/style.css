@@ -195,7 +195,6 @@ header {
 }
 .plan-text h2,
 .history h2 {
-
   font-size: 32px;
   font-weight: bold;
   margin: 0;
@@ -238,12 +237,14 @@ header {
 .history-slider .slick-arrow {
   display: none!important;
 }
-.slick-dots li button:before,
-.slick-dots li.slick-active button:before {
+.history-slider .slick-dots li button:before,
+.history-slider .slick-dots li.slick-active button:before {
   color: floralwhite;
   font-size: 28px;
 }
-
+.history-slider .slick-slide {
+ outline: none; 
+}
 /*########################### Award Section #################################*/
 .award-inner {
   width: 100%;
