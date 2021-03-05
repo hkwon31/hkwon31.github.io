@@ -26,4 +26,13 @@ $(function(){
     slidesToShow: 4,
     slidesToScroll: 2
   })
+  $('.project-img').slick({
+    dots: true,
+    infinite: true,
+    sped: 500,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    cssEase: 'linear',
+  })
 })
