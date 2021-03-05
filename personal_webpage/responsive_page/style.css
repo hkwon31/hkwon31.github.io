@@ -351,6 +351,18 @@ header {
   color: #0088cc;
   font-weight: bold;
 }
+.our-office span:before {
+  font-family: fontawesome;
+  display: inline-block;
+  margin-right: 5px;
+  text-align: center;
+  border: 1px solid #ddd;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 50%;
+  color: #0088cc;
+}
 .our-office span:nth-of-type(1):before {
   content: '\f041';
 }
@@ -359,14 +371,6 @@ header {
 }
 .our-office span:nth-of-type(3):before {
   content: '\f0e0 ';
-}
-.our-office span:before {
-  font-family: fontawesome;
-  margin-right: 5px;
-  border: 1px solid #ddd;
-  padding: 5px;
-  border-radius: 50%;
-  color: #0088cc;
 }
 .business-hours span:before {
   content: '\f017 ';
