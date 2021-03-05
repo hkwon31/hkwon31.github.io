@@ -37,6 +37,9 @@ body {
   bottom: 20px;
   overflow: hidden;
 }
+.content > div {
+ height: 100%; 
+}
 header {
   position: fixed;
   top: 0;
@@ -194,9 +197,6 @@ header {
 }
 
 /*########################### Location Section #################################*/
-.content > div {
-  height: 100%;
-}
 .feature {
   border: 1px solid #000;
   background: url("images/background-location.jpg") no-repeat center center;
@@ -257,4 +257,121 @@ header {
   color: #fff;
   margin: 20px 0;
 }
+
+/*########################### Contact Section #################################*/
+.content-inner {
+  height: 100%;
+  background-color: #fff;
+  position: relative;
+}
+.content-inner-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  width: 70%;
+}
+.content-inner-center > div {
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 20px;
+}
+.content-form h2 {
+  font-size: 32px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+.content-form em {
+  font-style: normal;
+  font-weight: normal;
+}
+.content-form > span {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.content-form-inner label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+.content-form-inner span {
+  color: crimson;
+  margin-left: 5px;
+}
+.content-form-inner input {
+  height: 2em;
+}
+.content-form-inner input,
+.content-form-inner textarea {
+  margin-left: 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
+}
+.content-form-inner input:hover,
+.content-form-inner input:focus,
+.content-form-inner textarea:hover,
+.content-form-inner textarea:focus {
+  border-color: #0088cc;
+}
+.content-form-inner input:focus,
+.content-form-inner textarea:focus {
+  background-color: #ddd;
+}
+.content-form-inner button {
+  margin-top: 10px;
+  background-color: #0088cc;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 10px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  outline: none;
+}
+.content-info > div {
+  margin-bottom: 40px;
+}
+.content-info div h3 {
+  font-weight: normal;
+}
+.content-info div h3 b {
+  margin-left: 5px;
+}
+.content-info div span {
+  display: block;
+  margin: 10px 0;
+  font-size: 12px;
+}
+.content-info div span:nth-of-type(3) {
+  color: #0088cc;
+  font-weight: bold;
+}
+.our-office span:nth-of-type(1):before {
+  content: '\f041';
+}
+.our-office span:nth-of-type(2):before {
+  content: '\f095';
+}
+.our-office span:nth-of-type(3):before {
+  content: '\f0e0 ';
+}
+.our-office span:before {
+  font-family: fontawesome;
+  margin-right: 5px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 50%;
+  color: #0088cc;
+}
+.business-hours span:before {
+  content: '\f017 ';
+  font-family: fontawesome;
+  margin-right: 10px;;
+}
+
 
