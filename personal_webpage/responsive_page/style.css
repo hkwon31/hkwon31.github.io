@@ -787,5 +787,262 @@ input[id=tab3]:checked ~ .tabs {
   content: '\f017 ';
   font-family: fontawesome;
   margin-right: 10px;
-  ;
+}
+.hiring-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  z-index: 100;
+}
+.hiring-header-inner {
+  margin: auto;
+  width: 90%;
+  height: inherit;
+  border-bottom: 2px solid rgba(203, 185, 185, 0.34);
+  font-weight: 400;
+  line-height: 80px;
+}
+.hiring-main {
+  margin-top: 80px;
+  height: 400px;
+  position: relative;
+}
+.hiring-main-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 46px;
+}
+.hiring-main-inner span {
+  position: relative;
+  font-size: 16px;
+}
+.hiring-main-inner span:before,
+.hiring-main-inner span:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: calc(50% - 0.5px);
+  background-color: black;
+}
+.hiring-main-inner span:before {
+  right: 100%;
+  margin-right: 5px;
+}
+.hiring-main-inner span:after {
+  left: 100%;
+  margin-left: 5px;
+}
+.hiring-main-inner h2 {
+  margin-top: 10px;
+}
+.hiring-info {
+  overflow: hidden;
+}
+.hiring-info > div {
+  width: 50%;
+  height: 450px;
+  float: left;
+  position: relative;
+}
+.hiring-info-text-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+.hiring-info-text-div h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+.hiring-info-text-div p {
+  font-weight: bold;
+  color: lightgray;
+}
+.hiring-info-photo img {
+  width: 100%;
+  height: 100%;
+}
+.hiring-slogan {
+  height: 400px;
+  padding: 0;
+  position: relative;
+}
+.hiring-slogan p {
+  position: absolute;
+  margin: 0;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 30px;
+  color: lightgray;
+  font-weight: 400;
+  text-align: center;
+}
+.hiring-slogan p:before {
+  content: ',,';
+  font-family: 'Overpass', sans-serif;
+  font-size: 100px;
+  position: absolute;
+  transform: rotate(180deg);
+  top: -35px;
+  left: -50px;
+}
+.hiring-contact-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+}
+.hiring-contact-box p {
+  color: gray;
+  font-weight: 400;
+}
+.hiring-contact ul {
+  display: inline-block;
+  width: 45%;
+  padding: 0;
+}
+.hiring-contact ul li {
+  margin: 5px;
+}
+.hiring-contact ul li:first-child{
+  font-weight: bold;
+}
+.hiring-contact ul li:last-child{
+  color: cornflowerblue
+}
+.hiring-sns a {
+  display: inline-block;
+  color: gray;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+}
+.hiring-sns a:before {
+  content: '';
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  transition: 0.5s;
+  border-radius: 50%;
+}
+.hiring-sns a:hover {
+  color: white;
+}
+.hiring-sns a:hover:before {
+  transform: translateX(-50%) scale(1);
+}
+.hiring-sns a:nth-child(1):before {
+  background-color: #3b5999;
+}
+.hiring-sns a:nth-child(2):before {
+  background-color: #55acee;
+}
+.hiring-sns a:nth-child(3):before {
+  background-color: #0077B5;
+}
+.hiring-sns a:nth-child(4):before {
+  background-color: #e4405f;
+}
+.hiring-sns a:nth-child(5):before {
+  background-color: #cd201f;
+}
+.hiring-sns a:nth-child(6):before {
+  background-color: #25D366;
+}
+.hiring-main.project-main01 {
+  background: url("images/project-main-01-01.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+.hiring-main.project-main02 {
+  background: url("images/project-main-02-01.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.hiring-main.project-main03 {
+  background: url("images/project-main-03-01.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.project-main01 .hiring-main-inner,
+.project-main02 .hiring-main-inner,
+.project-main03 .hiring-main-inner {
+  width: 100%;
+  color: white;
+  animation: pm-showing-up 1s 0s linear both;
+}
+.project-main01 .hiring-main-inner span:before, 
+.project-main02 .hiring-main-inner span:before, 
+.project-main03 .hiring-main-inner span:before, 
+.project-main01 .hiring-main-inner span:after,
+.project-main02 .hiring-main-inner span:after,
+.project-main03 .hiring-main-inner span:after {
+  height: 2px;
+  background-color: white;
+} 
+
+@keyframes pm-showing-up {
+  0% {
+    opacity: 0;
+    margin-top: 100px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+.project-main01 .hiring-main-inner h2,
+.project-main02 .hiring-main-inner h2,
+.project-main03 .hiring-main-inner h2 {
+  font-weight: 200;
+  font-size: 60px;
+}
+.project-ul ul{
+  padding-left: 0;
+  margin-top: 160px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.project-ul ul li {
+  margin: 10px;
+}
+.project-ul ul li:before {
+  content: '>';
+  margin-right: 5px;
+}
+.featherlight .featherlight-content {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  overflow-y: hidden;
+}
+.featherlight .featherlight-close-icon {
+  background-color: gray;
+  right: 50px;
+  outline: none;
+}
+.featherlight iframe {
+  width: 100%;
+  height: 100%;
 }
