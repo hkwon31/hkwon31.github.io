@@ -578,12 +578,15 @@ input[id=tab3]:checked ~ .tabs {
   border: 1px solid #000;
   background: url("images/background-location.jpg") no-repeat center center;
   height: 100%;
+  position: relative;
 }
 
 .feature:before {
   content: "";
   background-color: rgba(0, 0, 0, 0.9);
   position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
 }
