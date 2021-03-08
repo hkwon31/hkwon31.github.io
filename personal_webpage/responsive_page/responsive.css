@@ -12,6 +12,11 @@
     background-color: #ddd;
   }
   
+  /* velocity navigation button */
+  .cd-vertical-nav {
+    display: none;
+  }
+  
   /* header */
   header {
     transition: 0.5s;
@@ -109,4 +114,91 @@
     right: 20px;
     bottom: 20px;
   }
+  
+  /*  Show/Hide Section  */
+
+/*
+  #home,
+  #about,
+  #ph,
+*/
+  #project,
+  #awards,
+  #location,
+  #contact {
+    display: none;
+  }
+  /*########################### Home Section #################################*/
+  #home .content {
+    height: 100vh;
+  }
+  .text-screen {
+    width: 100%;
+  }
+  .home-text {
+    left: 20px;
+    transform: translateY(-50%);
+  }
+  .home-text span {
+    font-size: 50px;
+  }
+  
+  /*########################### About Section #################################*/
+  #about .content {
+    height: auto;
+  }
+  .about-inner {
+    height: auto;
+    background: #0dace3;
+  }
+  .about-content {
+    width: 100%;
+    position: static;
+    transform: none;
+    margin-left: 0;
+    text-align: center;
+  }
+  .about-content img {
+    width: 100px;
+    float: none;
+    margin-bottom: 10px;
+  }
+  
+  /*########################### Plan & History Section #################################*/
+  #ph .content,
+  .plan-div {
+    height: auto;
+  }
+  .plan-div-inner {
+    position: static;
+    transform: none;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    padding-top: 40px;
+  }
+  .plan-div-inner > div {
+    height: auto;
+  }
+  .plan-text h2,
+  .history h2 {
+    font-size: 24px;
+  }
+  .plan {
+    margin-bottom: 40px;
+  }
+  .plan .plan-text,
+  .plan .plan-photo {
+    width: 100%;
+    float: none;
+  }
+  .plan-photo {
+    text-align: center;
+  }
+  .plan-photo img {
+    width: 300px;
+    height: auto;
+  }
+  
+  
 }

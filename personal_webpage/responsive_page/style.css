@@ -120,7 +120,6 @@ header {
   height: 100%;
   position: relative;
   background-color: white;
-/*  border: 1px solid #000; */
 }
 .text-screen {
   position: absolute;
@@ -273,6 +272,7 @@ header {
 .about-content p {
   overflow: hidden;
   font-size: 1em;
+  color: lightgray;
 }
 
 .about-item {
@@ -444,6 +444,7 @@ input[id=tab3]:checked ~ .tabs {
   transform: translate(-50%, -50%);
 }
 .plan-div-inner > div {
+  width: 100%;
   height: 50%;
 }
 .plan-text {
