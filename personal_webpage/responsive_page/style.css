@@ -317,7 +317,7 @@ input[type=radio] {
 input[id=tab1]:checked ~ .btns label[for=tab1],
 input[id=tab2]:checked ~ .btns label[for=tab2],
 input[id=tab3]:checked ~ .btns label[for=tab3] {
-  background-color: crimson;
+  background-color: gray;
 }
 input[id=tab1]:checked ~ .tabs {
   margin-left: 0
